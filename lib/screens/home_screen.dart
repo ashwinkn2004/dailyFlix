@@ -46,16 +46,19 @@ class _HomeScreenState extends State<HomeScreen> {
             )
           ],
         ),
-        body: Column(
+        body: const Column(
           children: [
-            FutureBuilder(
+            Center(
+              child: Text('HOME SCREEN'),
+            ),
+            /*FutureBuilder(
               future: upcomingFuture,
               builder: (context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.waiting) {
                   return CircularProgressIndicator();
                 }
               },
-            )
+            )*/
           ],
         ));
   }
